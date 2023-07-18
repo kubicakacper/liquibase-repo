@@ -22,8 +22,8 @@ create table company (
 )
 --rollback DROP TABLE company;
 
---changeset other.dev:3 labels:example-label context:example-context
+--changeset kacper:3
 --comment: example comment
-alter table person add column country varchar(2)
+ALTER TABLE person ADD COLUMN country varchar(2)
 --rollback ALTER TABLE person DROP COLUMN country;
 
