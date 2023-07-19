@@ -9,9 +9,9 @@ create table person (
     address2 varchar(50),
     city varchar(30)
 )
---rollback DROP TABLE person;
+--rollback drop table person;
 
 --changeset kacper.kubica:2
 --comment: example comment
-ALTER  TABLE  person  ADD  nickname  varchar(30);
---rollback ALTER TABLE person DROP COLUMN nickname;
+alter table person add nickname varchar(30);
+--rollback alter table person drop column nickname;
